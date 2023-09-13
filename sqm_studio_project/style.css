@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans Caption', serif;
+    color: hsl(172, 76%, 15%);
+}
+body {
+    max-width: 1440px;
+}
+header {
+    background: url(images/header2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 250px;
+    
+}
+
+nav {
+    top: auto;
+    left: auto;
+    display: inline-block;
+    justify-content: space-between;
+    gap: 10%;
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    position: absolute;
+    height: 60%;
+    margin-top: 5%;
+
+}
+
+nav .logo {
+    /* background-color: hsl(0, 0%, 100%, 0.75);
+    border-radius: 30px; */
+    color: hsl(0, 0%, 100%);
+    font-size: 50px;
+    font-family: 'Krona One', sans-serif;
+    text-shadow: 4px 4px hsl(172, 76%, 15%);
+    margin-bottom: 3%;
+    text-decoration: none;
+}
+
+/* стили для ссылок */
+nav a{
+    text-decoration: none; /* включая лого */
+}
+
+
+/* .wrapper>main:target~.nav-link>li>a[href="index.php"],
+.wrapper>.reports_data:target~.nav-link>a[href="reports_data.php"],
+.wrapper>.report_example:target~.nav-link>a[href="report_example.php"],
+.wrapper>.study:target~.nav-link>a[href="study.php"],
+.wrapper>.contacts:target~.nav-link>a[href="contacts.php"],
+/* .wrapper>.registration.php:target~.nav-link>a[href="registration.php"], */
+/* .wrapper>.enter:target~.nav-link>a[href="enter.php"] */
+/* .wrapper>.personal_account.php:target~.nav-link>a[href="personal_account.php"]  */
+/* { */
+    /* background: hsl(0, 0%, 100%); */
+    /* cursor: default; */
+/* } */
+
+/* .wrapper>.tabs-scroller:not(.nav-link){ */
+    /* order:1; */
+/* } */
+
+a:hover {
+    cursor: pointer;
+}
+
+a.to-page{
+    text-decoration: none;
+    font-weight: 400;
+}
+
+a.to-page:hover{
+    text-shadow: hsl(51, 100%, 49%) 0 7px 8px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+a.text-link{
+    text-decoration: none;
+    color: rgb(24, 131, 103);
+    font-weight: 700;
+}
+
+a.text-link:hover {
+    text-shadow: hsl(172, 76%, 15%) 1px 1px 2px;
+}
+
+ul.nav-link {
+    list-style: none;
+    background-color: hsl(0, 0%, 100%, 0.75);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    order: 0;
+}
+
+ul.nav-link li {
+    display: inline;
+    flex: 0, 1, auto;
+    
+}
+
+ul.nav-link a {
+    display: inline-block;
+    width: 8em;     /* Относительно шрифта: em */
+    padding: 2%;
+    color: hsl(172, 76%, 15%);
+    /* text-shadow: 2px 1px hsl(0, 0%, 74%); */
+    text-decoration: none;
+    text-align: center;
+    flex: 0, 1, auto;
+}
+
+ul.nav-link a:hover {
+    background: hsl(0, 0%, 100%);
+    color: hsl(172, 76%, 15%);
+    text-transform: uppercase;
+    font-weight: 700;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    height: 47px;    
+}
+
+ul.nav-link a.active {
+    background: hsl(0, 0%, 100%);
+    color: hsl(172, 76%, 15%);
+    text-transform: uppercase;
+    font-weight: 700;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    height: 47px;
+}
+
+main {
+    background: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+/* общие стили для блоков основной части */
+.main-block{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 55.8%;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.main-block__content{
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+/* блок 1 слоган и картинка */
+.slogan{
+    padding: 3%;
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 55.8%;
+    flex-direction: row;
+}
+
+.slogan__text {
+    max-width: 50%;
+    flex: 0, 1, auto;
+    align-self: center;
+}
+
+.slogan__img {
+    max-width: 50%;
+    flex: 0, 1, auto;
+}
+
+.slogan__img img{
+    max-width: 100%;
+    flex: 0, 1, auto;
+}
+
+h1{
+    color: hsl(172, 76%, 15%);
+    font-weight: 400;
+}
+
+h2{
+    text-transform: uppercase;
+    font-family: 'Krona One', sans-serif;
+    color: hsl(172, 76%, 15%);
+    font-weight: 400;
+}
+
+h3 {
+    text-transform: uppercase;
+    color: hsl(173, 65%, 30%);
+    font-weight: 400;
+}
+
+h4{
+    text-transform: uppercase;
+    color: rgb(25, 182, 148);
+    font-weight: 400;
+    font-size: 15px;
+}
+
+p {
+    color: hsl(172, 76%, 15%);
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 5px;
+    line-height: 1.5;
+}
+
+/* блок 2 о компании */
+
+.about__items{
+    display: flex;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+.about__item{
+    width: 25%;
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+}
+
+.about__item h4 {
+    height: 3em;
+}
+
+.about__item img{
+    text-align: center;
+}
+
+/* 3й блок возможности */
+.possibility__box{
+    display: flex;
+    align-items: flex-start;
+}
+
+.possibility{
+    width: 20%;
+    min-height: 550px;
+    flex-wrap: wrap;
+    
+}
+
+.possibility__text {
+    color: white;
+    padding: 7%;
+    word-wrap: break-word;
+}
+
+.possibility__img {
+    max-width: 100%;
+}
+
+.quality_assurance{
+    background: rgb(245, 85, 85);
+}
+
+.joint_venture{
+    background: rgb(173, 85, 245);
+}
+
+.data_integration{
+    background: rgb(85, 245, 245);
+}
+
+.support_language{
+    background: rgb(242, 245, 85);
+}
+
+.use_analitics{
+    background: rgb(245, 85, 208);
+}
+
+
+/* стилизация форм */
+button[type=submit] {
+    padding: 20px;
+    background-color: hsl(35, 89%, 63%);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    width: 100%;
+}
+
+form{
+    background: rgb(218, 242, 239);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 3px rgb(0, 0, 0, 0.3);
+    width: 50%;
+    max-height: 80%;
+    padding: 0;
+    text-align: center;
+    font-size: 15px;
+}
+
+input {
+    width: 100%;
+    border-radius: 5px;
+    border-color: #f1f1f1;
+    padding: 15px;
+    /* padding-left: 10px; */
+    margin-bottom: 10px;
+    background: rgb(236, 245, 244);
+}
+
+.feedback__form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 50%;
+}
+
+.feedback__form form{
+    width: 100%;
+}
+
+.feedback__form--description{
+    text-align: center;
+    margin: 1em;
+}
+
+section{
+    padding: 5%;
+}
+
+.study{
+    justify-content: center;
+    align-items: center;
+    min-width: 60%;
+}
+
+.contacts{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+form span {
+    display: block;
+    float: right;
+    font-size: .7em;
+    color: red;
+    margin-bottom: 20px;
+}
+
+span {
+    color: rgb(25, 182, 148);
+}
+
+.footer {
+    background: rgb(25, 182, 148);
+}
+footer {
+    background: hsl(167, 44%, 70%);
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+
+.footer-logo p{
+    /* width: 175px; */
+    font-size: 20px;
+    font-family: 'Krona One', sans-serif;
+    text-shadow: 1px 1px hsl(172, 76%, 15%);
+    color: hsl(168, 34%, 41%);;
+}
+
+a.footer-logo{
+    text-decoration: none;
+}
+
+.footer-link li {
+    display: inline;
+}
+
+ul.footer-link a{
+    display: inline-block;
+    width: 11em;
+    padding: 10px;
+    color: hsl(168, 34%, 41%);
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+}
+
+
+
+/* font-family: 'PT Sans Caption',
+sans-serif; */ 
+/* weight 400 */
+
+/* font-family: 'Krona One',
+sans-serif; */ 
