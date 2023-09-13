@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1440px;
+}
+
+header {
+    background: url(images/desktop/image-header.jpg);
+    height: 800px;
+    background-size: contain;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 10%;
+    color: hsl(0, 0%, 100%);
+
+}
+
+a:hover {
+    cursor: pointer;
+}
+ul.nav-link {
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+       
+}
+
+.nav-link li {
+    display: inline;
+}
+
+ul.nav-link a {
+    display: inline-block;
+    width: 8em;
+    padding: 17px;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    
+}
+
+ul.nav-link a:hover {
+    
+    background: hsl(0, 0%, 100%);
+    color: hsl(212, 27%, 19%);
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    border-radius: 30px;
+    
+}
+
+/* ************ */
+/* Заголовок    */
+/* ************ */
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 60px;
+    letter-spacing: 8px;
+    margin: 100px;
+    
+}
+
+/* ************** */
+/* Основная часть */
+/* ************** */
+
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    
+    
+}
+
+.bg-white {
+    padding: 20%;
+    background: hsl(26, 100%, 99%);
+}
+
+h2 {
+    color: hsl(212, 27%, 19%);
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 45px;
+    letter-spacing: -2px;
+    
+}
+
+p {
+    font-size: 18px;
+    font-family: 'Barlow', sans-serif;
+    margin: 8% 0;
+    line-height: 1.5;
+}
+
+.description {
+    color: hsl(232, 10%, 55%);
+}
+
+.link {
+    text-decoration: none;
+    color: hsl(212, 27%, 19%);
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    border-radius: 30px;
+
+}
+
+.link-1:hover {
+    text-shadow: hsl(51, 100%, 49%) 0 7px 8px;
+}
+
+.link-2:hover {
+    text-shadow: hsl(7, 99%, 70%) 0 7px 8px;
+}
+
+/* *************** */
+/* Cherry + Orange */
+/* *************** */
+
+.services {
+    
+    display: flex;
+    align-items: center;
+
+}
+
+.cherry {
+    
+    background: url(images/desktop/image-graphic-design.jpg);
+    height: 600px;
+    width: 720px;
+    background-size: contain;     
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: hsl(167, 40%, 24%);
+    padding: 10% 12% 0 12%;
+    
+    
+}
+
+.orange {
+    background: url(images/desktop/image-photography.jpg);
+    height: 600px;
+    width: 720px;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: hsl(198, 62%, 26%);
+    padding: 10% 12% 0 12%;
+}
+
+h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 30px;
+    letter-spacing: -2px;
+}
+
+.ch-text {
+   padding-left: 20px;
+    
+}
+.or-text {
+    padding-left: 20px;
+}
+
+/* ************ */
+/* testimonials */
+/* ************ */
+
+aside {
+    background: hsl(26, 100%, 99%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12%;
+    
+}
+
+h6 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 23px;
+    letter-spacing: 6px;
+    color: hsl(206, 4%, 67%);
+    text-transform: uppercase;
+    margin-bottom: 8%;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.person {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.photo {
+    width: 20%;
+    border-radius: 100%;
+}
+
+.feedback {
+    color: hsl(213, 9%, 39%);
+    align-self: center;
+    
+}
+
+.name {
+    margin-bottom: 0;
+    color: hsl(212, 27%, 19%);
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 18px;
+    letter-spacing: -1px;
+}
+
+.position {
+    margin-top: 2%;
+    color: hsl(210, 4%, 67%);
+    font-size: 15px;
+}
+
+/* ************ */
+/* **Картинки   */
+/* ************ */
+
+.img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+
+.gallery {
+    width: 100%;
+}
+
+
+/* ************ */
+/* **footer     */
+/* ************ */
+
+
+footer {
+    background: hsl(167, 44%, 70%);
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+}
+
+.footer-logo {
+    width: 175px;
+}
+
+ul.info {
+    margin-left: 0px;
+    padding-left: 0px;
+    list-style: none;
+}
+
+.info li {
+    display: inline;
+}
+
+ul.info a {
+    display: inline-block;
+    width: 6em;
+    padding: 17px;
+    color: hsl(168, 34%, 41%);
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+}
+
+ul.info a:hover {
+    color: hsl(212, 27%, 19%);
+}
+
+.nets {
+    display: flex;
+    gap: 15%;
+    width: 10em;
+    padding: 60px 0 8px 0;
+}
+
+
