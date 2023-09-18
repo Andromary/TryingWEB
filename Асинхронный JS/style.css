@@ -1,0 +1,29 @@
+.box{
+    width: 300px;
+    background: skyblue;
+    padding: 20px;
+    margin: 0 auto;
+    border: 4px solid rgb(193, 215, 246);
+    border-radius: 5px;
+}
+.box span{
+    color: brown;
+}
+.box .image{
+    width: 100px;
+}
+
+.box .country-image{
+    padding: 20px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box .border{
+    background-color: aquamarine;
+    padding: 5px;
+    display: inline-block;
+    margin: 5px;
+}
